@@ -1,0 +1,51 @@
+.random-api{
+    font-family: 'Inter Regular';
+    color: white;
+    width: 80%;
+    margin: 5em auto;
+    line-height: 1.5em;
+    font-size: 1.9em;
+}
+  
+.random-phase{
+    width: 45%
+}
+
+.random-author{
+    font-family: 'Inter Bold';
+    margin: 2em 0;
+}
+
+.random-refresh{
+    transform: scale(2);
+    margin: 1em .5em
+}
+
+
+.random {
+    animation: ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+  
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .random-phase{
+      width: 100%
+    }
+    .random-api{
+      line-height: 22px;
+      font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1920px) {
+    .random-phase{
+        width: 100%
+    }
+    .random-api{
+        line-height: 2.5rem;
+        font-size: 2em;
+    }
+}

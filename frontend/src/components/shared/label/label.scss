@@ -1,0 +1,48 @@
+.container-label{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0.8em;
+}
+.title-label{
+    font-size: 15px;
+    font-family: 'Inter Regular';
+    letter-spacing: 3px;
+}
+.description-label{
+    font-size: 56px;
+    font-family: 'Inter Bold';
+    line-height: 2em;
+}
+
+.color-light{
+    color: $white;
+}
+
+.color-dark{
+    color: $gray;
+}
+
+@media only screen and (max-width: $tablet_m) {
+    /* For mobile phones: */
+    .container-label{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .title-label{
+        font-size: 0.22em;
+    }
+    .description-label{
+        font-size: 0.4em;
+    }
+}
+
+@media only screen and (min-width: $tablet_m) and (max-width: $laptop_s) {
+    .title-label{
+        font-size: 0.3em;
+    }
+    .description-label{
+        font-size: 0.6em;
+    }
+  }
