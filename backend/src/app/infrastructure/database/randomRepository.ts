@@ -6,56 +6,60 @@ class RandomRepository implements IRandomRepository {
     async getRandom(): Promise<RandomResponse> {
         let randoms = [
             {
-                phase: '“El hardware es lo que hace a una máquina rápida; el software es lo que hace que una máquina rápida se vuelva lenta” ',
+                phase: '“Hardware is what makes a machine fast; software is what makes a fast machine slow”',
                 author: 'Craig Bruce'
             },
             {
-                phase: '“Ley de Alzheimer de la programación: si lees un código que escribiste hace más de dos semanas es como si lo vieras por primera vez”',
+                phase: '“Alzheimer is law of programming: if you read a code you wrote more than two weeks ago, it is like seeing it for the first time”',
                 author: 'Dan Hurvitz'
             },
             {
-                phase: '“Si el código y los comentarios no coinciden, posiblemente ambos sean erróneos”',
+                phase: '“If the code and the comments do not match, they are probably both wrong.”',
                 author: 'Norm Schryer'
             },
             {
-                phase: '“La tecnología por sí sola no basta. También tenemos que poner el corazón”',
+                phase: '“Technology alone is not enough. We also have to put our hearts”',
                 author: 'Jane Goodall'
             },
             {
-                phase: '“Sabes cuál es el problema? Imaginarte el algoritmo y no programarlo”',
+                phase: '“Do you know what is the problem? Imagine the algorithm and not program it”',
                 author: 'Paul Huanca'
             },
             {
-                phase: '“Está bien investigar y resolver misteriosos asesinatos, pero no deberías necesitar hacerlo con el código. Simplemente deberías poder leerlo”',
+                phase: `“It's fine to investigate and solve murder mysteries, but you shouldn't need to do it with code. You should just be able to read it”`,
                 author: 'Steve McConnell'
             },
             {
-                phase: '“Los Servicios Web son como el sexo entre los adolescentes. Todos hablan de hacerlo, pero aquellos que realmente lo hacen, lo hacen muy mal”',
-                author: 'Michelle Bustamante'
+                phase: '“There are only two kinds of programming languages: those that people are always complaining about and those that nobody uses.”',
+                author: 'Bjarne Stroustrup'
             },
             {
-                phase: '“Un mal PROGRAMADOR puede crear fácilmente dos nuevos empleos al año”',
-                author: 'David Parnas'
+                phase: '“If the automobile industry had followed the same development as computers, a Rolls-Royce today would cost $100, run a million miles on 3.7 liters, and explode once a year, killing everyone inside at the time.”',
+                author: 'Robert X. Cringely'
             },
             {
-                phase: '“El software es un gas: se expande hasta llenar su contenedor”',
-                author: 'Nathan Myhrvold'
+                phase: '“Wondering when computers will be able to think is like wondering when submarines will be able to swim.”',
+                author: 'Edsger W. Dijkstra'
             },
             {
-                phase: '“Si piensas que los usuarios de tus programas son idiotas, sólo los idiotas usarán tus programas”',
+                phase: '“If you think that the users of your programs are idiots, only idiots will use your programs”',
                 author: 'Linus Torvalds'
             },
             {
-                phase: '“Si queremos contar líneas de código, no deberíamos referirnos a ellas como líneas producidas, sino como líneas consumidas”',
+                phase: '“If we want to count lines of code, we should not refer to them as produced lines, but as consumed lines.”',
                 author: 'Edsger Dijkstra'
             },
             {
-                phase: '“La tecnología es sólo una herramienta. En términos de motivar a los niños y lograr que trabajen juntos, el profesor es el recurso más importante”',
+                phase: '“Technology is just a tool. In terms of motivating children and getting them to work together, the teacher is the most important resource”',
                 author: 'Bill Gates'
             },
             {
-                phase: '“Si piensas que la tecnología puede solucionar tus problemas de seguridad, está claro que ni entiendes los problemas ni entiendes la tecnología”',
+                phase: '“If you think that technology can solve your security problems, it is clear that you neither understand the problems nor understand the technology.”',
                 author: 'Bruce Schneier'
+            },
+            {
+                phase: '“Solve the problem first. So write the code”',
+                author: 'John Johnson'
             }
         ]
         return {
