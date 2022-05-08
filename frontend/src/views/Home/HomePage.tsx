@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import './HomePage.scss';
 
 import { IGeolocation } from 'interfaces/Geolocation.interface';
@@ -24,6 +24,13 @@ const HomePage = () => {
   const [random, setRandom] = useState<RandomRespose>();
   const [handleMore, setHandleMore] = useState<boolean>(true);
 
+  useMemo(() => {
+    (async () => {
+      const geolocation = await geolocationInfo();
+      setDateLocation(geolocation);
+    })();
+  },[])
+
   useEffect(() => {
 
     (async () => {
@@ -31,8 +38,6 @@ const HomePage = () => {
         setTimeworld(worldTime);
         const randomApi = await randomInfo();
         setRandom(randomApi);
-        const geolocation = await geolocationInfo();
-        setDateLocation(geolocation);
     })();
 
     setInterval(() => {

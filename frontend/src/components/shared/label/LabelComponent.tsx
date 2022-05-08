@@ -12,7 +12,7 @@ export const LabelComponent = ({ title, description, dayOrNight }: Props) => {
         <span className={`${dayOrNight === 'day' ? 'color-dark' : 'color-light'} title-label`}>{title}</span>
         <span className={`${dayOrNight === 'day' ? 'color-dark' : 'color-light'} description-label`}>
             {description}
-            <LoadingComponent isActive={description ? false : true} />
+            <LoadingComponent isActive={(description || description == 0) ? false : true} />
         </span>
     </div>)
 }
